@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tarun.assigment6final.Downloadpdf">
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:text="PDF Download Activity"
+        android:textSize="12pt" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PDF 1 File Location"
+        android:layout_alignBaseline="@+id/link1"
+        android:layout_alignBottom="@+id/link1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp" />
+
+    <TextView
+        android:id="@+id/link1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/link2"
+        android:layout_alignStart="@+id/link2"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="https://www.cisco.com/c/dam/en_us/about/annual-report/2016-annual-report-full.pdf" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_below="@+id/link1"
+        android:layout_marginTop="26dp"
+        android:text="PDF 2 File Location" />
+
+    <TextView
+        android:id="@+id/link2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView6"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_alignLeft="@+id/link3"
+        android:layout_alignStart="@+id/link3"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="https://www.cisco.com/web/about/ac79/docs/innov/IoE_Economy.pdf" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/link3"
+        android:layout_alignBottom="@+id/link3"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_alignStart="@+id/textView6"
+        android:text="PDF 3 File Location" />
+
+    <TextView
+        android:id="@+id/link3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/link5"
+        android:layout_alignStart="@+id/link5"
+        android:layout_below="@+id/link2"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="https://www.cisco.com/web/strategy/docs/gov/everything-for-cities.pdf" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView9"
+        android:layout_alignStart="@+id/textView9"
+        android:layout_below="@+id/link3"
+        android:layout_marginTop="30dp"
+        android:text="PDF 4 File Location" />
+
+    <TextView
+        android:id="@+id/link4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView10"
+        android:layout_alignBottom="@+id/textView10"
+        android:layout_alignLeft="@+id/link5"
+        android:layout_alignStart="@+id/link5"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="https://www.verizonenterprise.com/resources/reports/rp_DBIR_2017_Report_execsummary_en_xg.pdf" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:text="PDF 5 File Location "
+        android:layout_below="@+id/link4"
+        android:layout_alignLeft="@+id/textView10"
+        android:layout_alignStart="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/link5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView11"
+        android:layout_alignBottom="@+id/textView11"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="https://www.verizonenterprise.com/resources/reports/rp_DBIR_2017_Report_en_xg.pdf" />
+
+    <Button
+        android:id="@+id/buttonstartdownload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button"
+        android:layout_alignRight="@+id/button"
+        android:layout_alignTop="@+id/button"
+        android:layout_marginTop="51dp"
+        android:onClick="downloadpdf"
+        android:text="Start Download (Started)" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView11"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:text="Start Download (Bounded)"
+        android:onClick="downloadbound"/>
+
+</RelativeLayout>
